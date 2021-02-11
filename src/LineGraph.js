@@ -4,20 +4,6 @@ import { Line } from "react-chartjs-2";
 
 const LineGraph = () => {
   const [graphData, setGraphData] = useState([]);
-  const data = [
-    {
-      x: 10,
-      y: 20,
-    },
-    {
-      x: 15,
-      y: 10,
-    },
-    {
-      x: 12,
-      y: 4,
-    },
-  ];
 
   const createMockData = () => {
     let data = [];
@@ -29,7 +15,7 @@ const LineGraph = () => {
       value += Math.round((Math.random() < 0.5 ? 1 : 0) * Math.random() * 10);
       data.push({ x: date, y: value });
     }
-    setGraphData(data);
+    return setGraphData(data);
   };
 
   useEffect(() => {
