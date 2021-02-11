@@ -23,3 +23,64 @@
 .newsfeed__chart {
   width: 100%;
 }
+
+.newsfeed__buying__section {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #3b4754;
+  padding: 20px 0;
+}
+
+.newsfeed__market__section {
+  margin-top: 60px;
+}
+.newsfeed__market__box {
+  height: 10vh;
+  padding: 20px;
+  border: 1px solid #31363a;
+  border-radius: 4px;
+}
+
+.newsfeed__market__box p {
+  color: #7b858a;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.newsfeed__popularlists__section {
+  height: fit-content;
+  padding-bottom: 20px;
+}
+
+.newsfeed__popularlists__intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px 20px 0px;
+}
+
+.newsfeed__popularlists__intro > p {
+  font-weight: bold;
+  color: gray;
+  cursor: pointer;
+}
+
+.newsfeed__popularlists__badges {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsfeed__popularlists__badges .topic__badge {
+  border: 1px solid #31363a;
+  background-color: transparent;
+  color: white;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.topic__badge:hover {
+  background-color: #31363a;
+  cursor: pointer;
+}
